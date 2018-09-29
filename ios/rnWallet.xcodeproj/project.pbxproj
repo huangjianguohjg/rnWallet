@@ -60,6 +60,8 @@
 		C9996D6F213E377A00112CD3 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		C9FE19E2213E3CD600369242 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9FE19E1213E3CD600369242 /* Entitlements.plist */; };
 		D70DE96B8CB443D790859E38 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8613548D0023455D86EB58BE /* SimpleLineIcons.ttf */; };
+		D77C5C08215F30D8003A84ED /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = D77C5C06215F30D8003A84ED /* main.jsbundle */; };
+		D77C5C09215F30D8003A84ED /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D77C5C07215F30D8003A84ED /* assets */; };
 		DB8B2AA63C3B4401960A050A /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E89EB009AAE4E8298A31DEE /* libBVLinearGradient.a */; };
 		E97F7CA58514437588A93774 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BEAAF656D10456281CEA891 /* Zocial.ttf */; };
 		F1FBF48B2E62447D91840872 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 687471F5CB2B4A69AA8B9EEF /* MaterialIcons.ttf */; };
@@ -476,7 +478,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
@@ -535,6 +536,8 @@
 		C41C2A5B7D184E08AF2D9214 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		C6FBDDEC27B14AC4A642E78D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		C9FE19E1213E3CD600369242 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		D77C5C06215F30D8003A84ED /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../bundle/ios/main.jsbundle; sourceTree = "<group>"; };
+		D77C5C07215F30D8003A84ED /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../bundle/ios/assets; sourceTree = "<group>"; };
 		EDE2473FE9C14AABA7583C68 /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		F149B424AB5648F3B01FEEF9 /* libRNRandomBytes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNRandomBytes.a; sourceTree = "<group>"; };
 		FB9930B71C674416A2225F65 /* RNCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
@@ -693,7 +696,8 @@
 		13B07FAE1A68108700A75B9A /* rnWallet */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				D77C5C07215F30D8003A84ED /* assets */,
+				D77C5C06215F30D8003A84ED /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1058,7 +1062,8 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 9PKH3Y48BG;
+						DevelopmentTeam = PH9FYADS5D;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -1067,10 +1072,12 @@
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PH9FYADS5D;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PH9FYADS5D;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -1602,11 +1609,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77C5C09215F30D8003A84ED /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				53830A7A603B4362AA9D8923 /* Entypo.ttf in Resources */,
 				0121953721054B5BAF0716A7 /* EvilIcons.ttf in Resources */,
 				2DC90598CF194C8693F7E22A /* Feather.ttf in Resources */,
 				C9FE19E2213E3CD600369242 /* Entitlements.plist in Resources */,
+				D77C5C08215F30D8003A84ED /* main.jsbundle in Resources */,
 				0CFE93CB236C495A9E1847C7 /* FontAwesome.ttf in Resources */,
 				1F2C34E3DF1B4B2BA34A3020 /* Foundation.ttf in Resources */,
 				551E51BA3B6F4470A586E565 /* Ionicons.ttf in Resources */,
@@ -1721,7 +1730,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9PKH3Y48BG;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1765,6 +1776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnWallet.app/rnWallet";
 			};
 			name = Debug;
@@ -1773,8 +1785,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9PKH3Y48BG;
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
@@ -1814,6 +1828,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnWallet.app/rnWallet";
 			};
 			name = Release;
@@ -1855,7 +1870,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnWallet.qutewangluo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WodeWallet.xiaolala;
 				PRODUCT_NAME = rnWallet;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1871,7 +1886,7 @@
 				CODEPUSH_KEY = "pK8RB8ofvpWQ61myZmmTB9T2MTco7a564b77-f1ff-4d47-9736-77f53edab1de";
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PH9FYADS5D;
@@ -1899,7 +1914,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnWallet.qutewangluo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WodeWallet.xiaolala;
 				PRODUCT_NAME = rnWallet;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1917,6 +1932,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1955,7 +1971,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.rnWallet-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WodeWallet.xiaolala-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1974,6 +1990,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2011,7 +2028,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.rnWallet-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WodeWallet.xiaolala-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2028,6 +2045,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2084,6 +2102,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2285,7 +2304,7 @@
 				CODEPUSH_KEY = "emtBe56OjXm00NX2qdqgPRgaXWXt7a564b77-f1ff-4d47-9736-77f53edab1de";
 				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2314,7 +2333,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rnWallet.qutewangluo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WodeWallet.xiaolala;
 				PRODUCT_NAME = rnWallet;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2326,8 +2345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9PKH3Y48BG;
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
@@ -2367,6 +2388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnWallet.app/rnWallet";
 			};
 			name = Staging;
@@ -2382,6 +2404,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2419,7 +2442,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.rnWallet-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WodeWallet.xiaolala-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -2437,6 +2460,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PH9FYADS5D;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
