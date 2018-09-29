@@ -19,6 +19,7 @@ tokeniCon = {
 }
 
 
+
 class ItemDivideComponent extends Component {
     render() {
         return (
