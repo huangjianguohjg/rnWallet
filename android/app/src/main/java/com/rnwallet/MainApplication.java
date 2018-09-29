@@ -3,6 +3,17 @@ package com.rnwallet;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.reactnativecomponent.barcode.RCTCapturePackage;
+import com.bitgo.randombytes.RandomBytesPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
+import com.rnfs.RNFSPackage;
+import co.airbitz.fastcrypto.RNFastCryptoPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import org.reactnative.camera.RNCameraPackage;
+import com.cmcewen.blurview.BlurViewPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.cmcewen.blurview.BlurViewPackage;
@@ -40,6 +51,17 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new VectorIconsPackage(),
+            new SplashScreenReactPackage(),
+            new RCTCapturePackage(),
+            new RandomBytesPackage(),
+            new LinearGradientPackage(),
+            new RNI18nPackage(),
+            new RNFSPackage(),
+            new RNFastCryptoPackage(),
+            new RNDeviceInfo(),
+            new RNCameraPackage(),
+            new BlurViewPackage(),
             new CodePush(null, getApplicationContext(), BuildConfig.DEBUG),
             new RNDeviceInfo(),
             new BlurViewPackage(),

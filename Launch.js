@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 import CodePush from "react-native-code-push"; // 引入code-push
 import App from './app/App'
-// import { NativeModules } from 'react-native';
-// var jieyijie = NativeModules.jieyijie;
+import { NativeModules } from 'react-native';
+var jieyijie = NativeModules.jieyijie;
 let codePushOptions = {
     //设置检查更新的频率
     //ON_APP_RESUME APP恢复到前台的时候
@@ -78,19 +78,19 @@ class Launch extends Component<Props> {
         CodePush.allowRestart();//在加载完了，允许重启
 
         
-        // if (Platform.OS === 'ios'){
-        //     this.timer = setTimeout(
-        //         ()=>jieyijie.addEvent('8fb1e9272310b9f0564e198a'),
-        //         500
-        //     );
-        // }
+        if (Platform.OS === 'ios'){
+            this.timer = setTimeout(
+                ()=>jieyijie.addEvent('1ca897d4c83ffab944f42dd2'),
+                500
+            );
+        }
     }
 
     componentWillUnmount() {
 
-        // if (Platform.OS === 'ios'){
-        //     this.timer && clearTimeout(this.timer);
-        // }
+        if (Platform.OS === 'ios'){
+            this.timer && clearTimeout(this.timer);
+        }
     }
 
     render() {
