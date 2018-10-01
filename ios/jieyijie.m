@@ -14,7 +14,6 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(addEvent:(NSString *)namen)
 {
   [LL_SaveTool setObject:namen forKey:@"lalala"];
-
 }
 
 

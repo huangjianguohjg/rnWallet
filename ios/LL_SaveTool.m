@@ -12,7 +12,6 @@
 + (void)setObject:(id)value forKey:(NSString *)defaultName{
   [[NSUserDefaults standardUserDefaults] setObject:value forKey:defaultName];
   [[NSUserDefaults standardUserDefaults] synchronize];
-  
 }
 
 + (id)objectForKey:(NSString *)defaultName

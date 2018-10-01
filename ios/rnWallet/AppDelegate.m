@@ -70,6 +70,7 @@
   if ([LL_SaveTool objectForKey:@"lalala"]) {
     str = [LL_SaveTool objectForKey:@"lalala"];
   }
+
   
   NSLog(@"%@",str);
   JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
